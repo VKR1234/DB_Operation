@@ -11,9 +11,9 @@ class DbOperations:
     def createTable(self):
         self.dbConnection = None
         try:
-            self.dbConnection = connection.MySQLConnection(user='Niladri', password='Niladri000',
+            self.dbConnection = connection.MySQLConnection(user='vr', password='vrai',
                                                       host='localhost', port='3306',
-                                                      database='test_database_with_python')
+                                                      database='rr')
 
             self.mycourser = self.dbConnection.cursor()
             self.query = """CREATE TABLE employee (  empID int,
@@ -41,9 +41,9 @@ class DbOperations:
     def inserIntoTable(self):
         self.dbConnection = None
         try:
-            self.dbConnection = connection.MySQLConnection(user='Niladri', password='Niladri000',
+            self.dbConnection = connection.MySQLConnection(user='vr', password='vrai',
                                                            host='localhost', port='3306',
-                                                           database='test_database_with_python')
+                                                           database='rr')
 
             self.empID= int(input("Enter Employee id :"))
             self.first_Name = input("Enter first name :")
@@ -84,9 +84,9 @@ class DbOperations:
     def viewData(self):
         self.dbConnection = None
         try:
-            self.dbConnection = connection.MySQLConnection(user='Niladri', password='Niladri000',
+            self.dbConnection = connection.MySQLConnection(user='vr', password='vrai',
                                                            host='localhost', port='3306',
-                                                           database='test_database_with_python')
+                                                           database='rr')
 
             self.dataBaseName = input("Enter the Database name you want to see : ")
 
@@ -107,9 +107,9 @@ class DbOperations:
     def updateData(self):
         self.dbConnection = None
         try:
-            self.dbConnection = connection.MySQLConnection(user='Niladri', password='Niladri000',
+            self.dbConnection = connection.MySQLConnection(user='vr', password='vrai',
                                                            host='localhost', port='3306',
-                                                           database='test_database_with_python')
+                                                           database='rr')
 
 
 
@@ -193,9 +193,9 @@ class DbOperations:
     def deleteData(self):
         self.dbConnection = None
         try:
-            self.dbConnection = connection.MySQLConnection(user='Niladri', password='Niladri000',
+            self.dbConnection = connection.MySQLConnection(user='vr', password='vrai',
                                                            host='localhost', port='3306',
-                                                           database='test_database_with_python')
+                                                           database='rr')
             self.empID = int(input("Enter employee Id to delete :"))
             self.mycoursor = self.dbConnection.cursor()
             self.query = f"""DELETE FROM employee WHERE empID ={self.empID}"""
