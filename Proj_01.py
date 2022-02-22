@@ -210,7 +210,7 @@ class DbOperations:
                 self.dbConnection.close()
                 logging.info("log info msg")
 
-dboperations = DbOperations()
+#dboperations = DbOperations()
 # dboperations.createTable()
 # dboperations.inserIntoTable()
 # dboperations.viewData()
